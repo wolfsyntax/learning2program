@@ -1,3 +1,6 @@
+;Exercise 1 in ICST105 - Computer Organization and Machine Language (Assembly : TASM)
+;Copyright (c) 2016. Wolf Syntax
+
 TITLE git1.asm
 .model  small
 .stack 100H
