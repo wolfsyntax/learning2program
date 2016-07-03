@@ -1,5 +1,6 @@
 ;Exercise 1 in ICST105 - Computer Organization and Machine Language (Assembly : TASM)
-;Copyright (c) 2016. Wolf Syntax
+;Copyright (c) 2016. Wolf Syntax (Jayson Alpe)
+;July 3, 2016
 
 TITLE git1.asm
 .model  small
