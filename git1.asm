@@ -33,11 +33,11 @@ TITLE git1.asm
       MOV DX, OFFSET welcome
       INT 21H
       
-	  MOV AH, 09H
+      MOV AH, 09H
       LEA DX, newline
       INT 21H     
       
-	  MOV AH, 09H
+      MOV AH, 09H
       MOV DX, OFFSET prompt1
       INT 21H
       
@@ -73,7 +73,7 @@ TITLE git1.asm
       MOV DX, OFFSET newline
       INT 21H
       	  
-	  ;DISPLAY
+;DISPLAY:
 	  
       MOV AH, 40H
       MOV BH, 00H
@@ -86,18 +86,20 @@ TITLE git1.asm
       INT 21H
       
       MOV AH, 40H
-	  MOV BH, 00H
-	  MOV CX, 4
+      MOV BH, 00H
+      MOV CX, 4
       MOV DX, OFFSET lname
       INT 21H
 	  
 	  
-	  MOV AH, 09H
-	  MOV CX, 2
-	  LEA DX, byear+4
-	  INT 21H
+      MOV AH, 09H
+      MOV CX, 2
+      LEA DX, byear+4
+      INT 21H
+;Exit:
       ;Return 0
       MOV AH, 4CH
       INT 21H
+
     ENDP MAIN
-	END MAIN
+END MAIN
