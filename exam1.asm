@@ -1,4 +1,4 @@
-;Prelime Examination in ICST105 - Computer Organization and Machine Language
+;Prelim Examination in ICST105 - Computer Organization and Machine Language
 ;Copyright (c) 2016. Wolf Syntax
 ;Jayson D. Alpe (Wolf Syntax)
 ;BSIT - 3
