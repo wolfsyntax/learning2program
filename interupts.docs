@@ -1,0 +1,55 @@
+INTERUPT 21H
+
+Function:       01H
+Syntax: (With Echo)
+        MOV AH, 01H
+        INT 21H
+        
+Misc:
+        The user input is stored in AL registry
+
+Function:       02H
+Syntax: (Display Single character)
+        MOV AH, 02H
+        MOV DL, character
+        INT 21H
+     
+        MOV AH, 02H
+        MOV DL, '_'
+        INT 21H
+Misc:
+        The user input is stored in AL registry
+
+Function:       08H
+Syntax: (Without Echo)
+        MOV AH, 08H
+        INT 21H
+        
+Misc:
+        The user input is stored in AL registry
+
+
+Function:       09H
+Syntax: 
+        MOV AH, 09H
+        MOV DX, OFFSET string_variable
+        INT 21H
+        
+        or
+        
+        MOV AH, 09H
+        LEA DX, string_variable
+        INT 21H
+Misc:
+        Display a '$' terminated string
+
+Function:       0AH | 10H
+Syntax: (with buffer)
+        MOV AH, 10H
+        LEA DX, buffer_string variable
+        INT 21H
+        
+Misc:
+        The read user input using buffered reader
+
+;TO BE CONTINUED...
