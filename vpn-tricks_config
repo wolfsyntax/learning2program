@@ -1,0 +1,135 @@
+route-delay 3
+
+route-nopull
+
+http-proxy 127.0.0.1 9666
+http-proxy-retry
+
+# AOL
+route 64.12.0.0 255.255.0.0 vpn_gateway
+route 207.200.64.0 255.255.192.0 vpn_gateway
+route 205.188.0.0 255.255.0.0 vpn_gateway
+
+# NTT Twitter
+route 168.143.0.0 255.255.0.0 vpn_gateway
+route 128.121.0.0 255.255.0.0 vpn_gateway
+route 128.242.0.0 255.255.0.0 vpn_gateway
+
+# Amazon
+route 174.129.0.0 255.255.0.0 vpn_gateway
+route 184.72.0.0  255.252.0.0 vpn_gateway
+
+# Cloud Front (Twitter)
+route 216.137.32.0 255.255.224.0 vpn_gateway
+
+# Facebook
+route 69.63.176.0 255.255.240.0 vpn_gateway
+route 66.220.144.0 255.255.240.0 vpn_gateway
+
+# Akamai (Facebook)
+route 72.246.0.0 255.254.0.0 vpn_gateway
+route 204.2.171.0 255.255.255.0 vpn_gateway
+
+# Youtube / Google
+route 74.125.0.0 255.255.0.0 vpn_gateway
+route 209.85.128.0 255.255.128.0 vpn_gateway
+route 202.78.112.0 255.255.240.0 vpn_gateway
+route 66.102.0.0 255.255.240.0 vpn_gateway
+route 208.65.152.0 255.255.252.0 vpn_gateway
+
+# Revsci
+route 216.223.0.0 255.255.0.0 vpn_gateway
+
+# Transip
+route 80.69.64.0 255.255.224.0 vpn_gateway
+
+# Hurricane Electric (mail-archive.com)
+route 72.52.64.0 255.255.192.0 vpn_gateway
+
+# GoDaddy
+route 64.202.160.0 255.255.224.0 vpn_gateway
+
+# PsiNET
+route 38.0.0.0 255.0.0.0 vpn_gateway
+
+# Wordpress
+route 72.233.0.0 255.255.128.0 vpn_gateway
+route 74.200.192.0 255.255.192.0 vpn_gateway
+route 76.74.254.0  255.255.255.128 vpn_gateway
+route 65.52.0.0 255.252.0.0 vpn_gateway
+
+# Spotify
+route 78.31.8.0 255.255.255.0 vpn_gateway
+
+# The Planet
+route 74.52.0.0 255.252.0.0 vpn_gateway
+
+# Slicehost / Posterous
+route 67.207.128.0 255.255.224.0 vpn_gateway
+
+# Softlayer / Twitpic
+route 174.36.0.0 255.254.0.0 vpn_gateway
+
+# Vimeo
+route 66.235.112.0 255.255.240.0 vpn_gateway
+route 208.67.232.0 255.255.248.0 vpn_gateway
+route 72.21.192.0 255.255.224.0 vpn_gateway
+
+# Wefollow
+route 70.32.64.0 255.255.192.0 vpn_gateway
+
+# blogspot
+route 64.233.160.0 255.255.224.0 vpn_gateway
+route 72.14.192.0 255.255.192.0 vpn_gateway
+
+# Twitpic
+route 74.86.0.0 255.255.0.0 vpn_gateway
+
+# dropbox
+route 174.36.0.0 255.255.192.0 vpn_gateway
+
+# pandora
+route 208.85.40.0 255.255.248.0 vpn_gateway
+
+# hulu 
+route 173.222.0.0 255.254.0.0 vpn_gateway
+route 96.16.0.0 255.254.0.0 vpn_gateway
+
+# BBC
+route 212.58.224.0 255.255.224.0 vpn_gateway
+route 78.31.8.0 255.255.252.0 vpn_gateway
+route 145.58.0.0 255.255.0.0 vpn_gateway
+route 195.230.110.0 255.255.255.0 vpn_gateway
+route 217.118.160.0 255.255.255.0 vpn_gateway
+route 62.69.160.0 255.255.224.0  vpn_gateway
+route 81.23.224.0 255.255.224.0 vpn_gateway
+
+# ITV
+route 83.98.0.0 255.255.128.0 vpn_gateway
+
+# LLNW
+route 87.248.194.0 255.255.254.0 vpn_gateway
+route 87.248.196.0 255.255.252.0 vpn_gateway
+route 87.248.200.0 255.255.248.0 vpn_gateway
+route 87.248.208.0 255.255.240.0 vpn_gateway
+route 178.79.192.0 255.255.192.0 vpn_gateway
+
+#TVCATCHUP
+route 84.234.16.0 255.255.240.0 vpn_gateway
+
+#Netflix
+route 208.75.76.0 255.255.252.0 vpn_gateway
+
+#Zattoo
+route 91.123.96.0 255.255.240.0 vpn_gateway
+
+#Wilmaa
+route 92.122.208.0 255.255.240.0 vpn_gateway
+
+#Rhapsody.com
+route 92.123.68.0 255.255.252.0 vpn_gateway
+route 207.188.0.0 255.255.224.0 vpn_gateway
+route 66.235.128.0 255.255.224.0 vpn_gateway
+route 66.150.171.0 255.255.255.0 vpn_gateway
+route 204.0.5.0 255.255.255.0 vpn_gateway
+route 96.6.0.0 255.254.0.0 vpn_gateway
