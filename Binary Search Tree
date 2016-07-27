@@ -1,0 +1,42 @@
+(defun inorder(x) 
+	(if (null x) 
+		nil
+		(append
+			(if (null x) nil)
+			(if (not (listp x)) nil)
+			(inorder (first (rest x)))
+			(list (first x))
+			(inorder (first (rest (rest x))))
+					
+		)
+	)
+)
+
+(defun preorder(x) 
+	(if (null x) 
+		nil
+		(append
+			(if (null x) nil)
+			(if (not (listp x)) nil)
+			(list (first x))
+			(preorder (first (rest x)))
+			(preorder (first (rest (rest x))))
+					
+		)
+	)
+)
+
+
+(defun postorder(x) 
+	(if (null x) 
+		nil
+		(append
+			(if (null x) nil)
+			(if (not (listp x)) nil)
+			
+			(postorder (first (rest x)))
+			(postorder (first (rest (rest x))))
+			(list (first x))		
+		)
+	)
+)
