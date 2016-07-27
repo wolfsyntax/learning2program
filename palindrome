@@ -1,0 +1,10 @@
+(defun ispal(x) (
+	if (null x) ()(
+		if (<= (length x) 1) t(
+			if (EQ (first x) (first (last x)))(
+			ispal (butlast (rest x)))
+			()
+			)
+		)
+	)
+)
