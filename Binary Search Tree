@@ -1,3 +1,17 @@
+Wolf Syntax (c) 2016
+Binary Search Tree
+
+L = Left-Sub-tree
+R = Right-Sub-tree
+V = Root
+
+[inorder  : LVR]
+[preorder : VLR]
+[postorder: LRV] 
+
+
+INORDER TRAVERSAL
+
 (defun inorder(x) 
 	(if (null x) 
 		nil
@@ -11,6 +25,9 @@
 		)
 	)
 )
+
+
+PREORDER TRAVERSAL
 
 (defun preorder(x) 
 	(if (null x) 
@@ -26,6 +43,8 @@
 	)
 )
 
+
+POSTORDER TRAVERSAL
 
 (defun postorder(x) 
 	(if (null x) 
