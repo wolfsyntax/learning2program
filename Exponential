@@ -1,0 +1,8 @@
+Using &optional and progn function
+
+(defun exp(b e &optional (acc 1))
+(if (= e 0) acc
+(progn
+	(setq acc (* acc b))
+	(exp b (- e 1) acc)
+)))
