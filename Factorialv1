@@ -1,0 +1,10 @@
+(defun factorial(n &optional (acc 1))
+	(if (= n 1)
+		()
+		(setq acc (* acc n)
+	)
+	(if (not (= n 1))
+		(factorial (- N 1) acc)
+		acc
+	)
+)
