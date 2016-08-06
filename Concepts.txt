@@ -1,0 +1,73 @@
+
+Number System:
+
+1. Binary        = Base 2
+2. Octa Decimal  = Base 8
+3. Decimal       = Base 10
+4. Hexa Decimal  = Base 16
+
+
+[Unsigned Binary]
+i.e. (8-bits)
+
+      7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+65 =  0   1   0   0   0   0   0   1  
+90 =  0   1   0   1   1   1   0   0
+
+[1's Complement]
+- inverting bits
+
+i.e.
+
+      7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+65  = 0   1   0   0   0   0   0   1  
+    = 1   0   1   1   1   1   1   0 <= 1's complement
+    
+90 =  0   1   0   1   1   1   0   0
+   =  1   0   1   0   0   0   1   1 <= 1's complement
+
+[2's Complement]
+- inverting bits
+- Find first occurence of '1' from right to left then copy the bits including the first '1'
+
+ie. 
+
+      7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+65 =  0   1   0   0   0   0   0   1  
+   =  1   0   1   1   1   1   1  [1] <= 2's complement
+   
+90 =  0   1   0   1   1   1   0   0
+   =  1   0   1   0   0  [1]  0   0 <= 2's complement
+  
+  
+converting 2's complement to decimal
+
+Psuedocode :
+
+Check if left most bit is '1' then:
+    - 2's complement 
+    - convert to decimal then insert negative sign (unsigned binary conversion)
+Otherwise:
+    - convert to decimal (unsigned binary conversion)
+    
+  
+[Signed Magnitude]
+- first bit => sign bit
+
+i.e 
+
+        7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+-90 =  [1]  1   0   1   1   1   0   0 
+
+ 90 =  [0]  1   0   1   1   1   0   0 
+ 
+
+[Packed BCD]
+- convert per nibble (4bits)
+- most right side nibble => sign bits
+
+
+
+
+
+
