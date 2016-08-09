@@ -1,0 +1,21 @@
+HEAD RECURSION
+
+-------------------
+-------------------
+recurse ()
+
+i.e Factorial in Common Lisp using Head recursion
+
+(defun factorial (n &optional (acc 1)) (if (= n 1) acc (progn (setq acc (* acc n)) (factorial (- n 1) acc))))
+
+
+TAIL RECURSION
+(defun factorial (n &optional (acc 1)) (if (= n 1) acc (progn (setq acc (* acc n)) (factorial (- n 1) acc))))
+
+recurse ()
+------------------
+------------------
+
+i.e Factorial in Common Lisp using Tail recursion
+
+(defun factorial (n) (if (= n 1) n (* n (factorial (- n 1)))))
