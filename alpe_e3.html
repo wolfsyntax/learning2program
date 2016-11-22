@@ -1,0 +1,126 @@
+
+
+<html>
+	<head>
+		<title>Grade Book App</title>
+		<script type="text/javascript">	
+			function calculate()
+			{
+				var student = document.gradeApp.fullname.value;
+				var cs = document.gradeApp.cs.value * 0.4;
+				var prelim = document.gradeApp.prl.value * 0.1;
+				var midterm = document.gradeApp.mdt.value * 0.2;
+				var prefi = document.gradeApp.prf.value * 0.1;
+				var finals = document.gradeApp.fn.value * 0.2;
+				
+				var numgrades = cs + prelim + midterm + prefi + finals;
+				var letterGrade = " ";
+				
+				var comment = " ";
+	
+
+				//Letter Grade
+				if(numgrades >= 96 && numgrades <= 100)
+					letterGrade = "A";
+				else if(numgrades >= 91 && numgrades <= 95)
+					letterGrade = "B+";
+				else if(numgrades >= 86 && numgrades <= 90)
+					letterGrade = "B";
+				else if(numgrades >= 81 && numgrades <= 85)
+					letterGrade = "C+";
+				else if(numgrades >= 76 && numgrades <= 80)
+					letterGrade = "C";
+				else if(numgrades == 75)
+					letterGrade = "D";
+				else
+					letterGrade = "F";
+				
+
+				//Remark
+				if(letterGrade == "F")
+					comment = "Failed";
+				else
+					comment = "Passed";
+//				alert("Working");
+
+				alert("Name: " + student + "\nNumerical Grade: " + numgrades + "\nLetter Grade: " + letterGrade + "\nRemark: " + comment);
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Grade Book</h1>
+		<form name="gradeApp" onSubmit="calculate(); return false;">
+			<table>
+					<tr>
+						
+						<td>
+							<label for = "fullname">Name: </label>
+						</td>
+						<td>
+							<input name = "fullname" type="text" value="" />
+						</td>
+					</tr>
+					
+					<tr>
+						
+						<td>
+							<label for = "cs">CS: </label>
+						</td>
+						<td>
+							<input name = "cs" type="text" value="" />%
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td>
+							<label for = "prl">PRL: </label>
+						</td>
+						<td>
+							<input name = "prl" type="text" value="" />%
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td>
+							<label for = "mdt">MDT: </label>
+						</td>
+						<td>
+							<input name = "mdt" type="text" value="" />%
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td>
+							<label for = "prf">PRF: </label>
+						</td>
+						<td>
+							<input name = "prf" type="text" value="" />%
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td>
+							<label for = "fn">FN: </label>
+						</td>
+						<td>
+							<input name = "fn" type="text" value="" />%
+						</td>
+					</tr>
+					<tr>
+						
+						<td>
+
+						</td>
+						<td>
+							<input type="submit"/>
+						</td>
+					</tr>
+					
+			</table>
+		</form>
+</body>
+</html>
