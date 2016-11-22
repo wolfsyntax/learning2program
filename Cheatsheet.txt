@@ -1,0 +1,26 @@
+
+Shell script
+- 
+
+shell commands
+> pwd 
+    -> print working directory
+    => $PWD or ${PWD}
+   
+   
+> cd
+    -> change working directory
+    -> cd .. = go back to the main directory
+    -> cd ~  = Home directory
+    -> cd
+    
+    
+> man
+    -> man <command>
+    => --help
+
+
+> mkdir
+    -> make directory
+    -> mkdir directory_name
+    -> 
